@@ -20,7 +20,7 @@ def coin(amount):
     """
     amount = float, change from user entered purchase
     
-    breaks down amount_n into coins by subtracting them from amount
+    breaks down amount into coins by subtracting them from amount
     """
     for i in range(len(coin_v)):
         while round(amount, 2) >= coin_v[i]:
