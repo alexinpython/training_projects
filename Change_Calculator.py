@@ -13,7 +13,7 @@ Created on Mon Oct  9 11:29:04 2017
 # Variables
 again = 'yes' #whether the user wants to use the program again
 coin_v = [0.25, 0.10, 0.05, 0.01] #values of quarter, dime, nickle, penny
-coin_n = [0, 0, 0, 0] #holds number of coins needed to make amount
+
 
 # Function
 def coin(amount):
@@ -34,6 +34,7 @@ print('This program calculates the change from a purchase and what coins '
       'you\'ll need to equal that change.')
 
 while again == 'yes':
+    coin_n = [0, 0, 0, 0] #holds number of coins needed to make amount
     price = float(input('Please enter the price of the item: '))
     money = float(input('Please enter the amount of money received: '))
     amount = round(money - price, 2) #change from purchase
